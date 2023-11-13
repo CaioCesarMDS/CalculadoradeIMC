@@ -1,0 +1,91 @@
+body {
+    background-color: #edfaff;
+}
+
+
+.text-img {
+    padding: 30px 50px 0 50px;
+    max-width: 50%;
+}
+
+main {
+    display: flex;
+}
+
+#title {
+    padding-bottom: 40px;
+    text-align: center;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+#paragraph {
+    line-height: 25px;
+    letter-spacing: 0.6px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+img {
+    margin: 50px 0 0 20px;
+    max-width: 100%;
+}
+
+.imc-calculator {
+    padding: 60px 50px 0 70px;
+    max-width: 50%;
+    letter-spacing: 0.6px;
+}
+
+.imc-calculator h2 {
+    padding-bottom: 20px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.imc-calculator h4 {
+    padding-bottom: 38px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.calculator {
+    padding: 24px;
+    background-color: #ffffff;
+    border: 1px solid #9ce4ff;
+    box-shadow: 8px 8px 0 0 #c4efff;
+    border-radius: 4px;
+}
+
+input {
+    width: 210px;
+    height: 40px;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+input:focus {
+    border: 3px solid #9ce4ff;
+    
+    outline: none;
+}
+
+label {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+button {
+    margin: 60px;
+    width: 250px;
+    height: 50px;
+    background-color: #36b1df;
+    border-radius: 10px;
+    cursor: pointer;
+    border: none;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: 600;
+    font-size: large;
+}
+
+button:hover {
+    background-color: #023344;
+    transition: background-color 0.8s;
+    transform: scale(1.1);
+    transition: transform 0.8s;
+}
