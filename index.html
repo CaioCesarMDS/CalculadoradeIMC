@@ -24,39 +24,52 @@
 
 <body>
     <main>
-        <div class="text-img">
-            <h1 id="title">
-                Calculadora de IMC
-            </h1>
-            <p id="paragraph">
-                A classificação do <i>índice de massa corporal </i><b>(IMC)</b> pode ajudar a identificar problemas
-                de
-                obesidade ou desnutrição, em crianças, adolescentes, adultos e idosos. <br>
-                Além de calcular o valor de <b>IMC</b>, esta calculadora também indica qual o intervalo de peso
-                ideal que se
-                deve ter para garantir uma melhor qualidade de vida.<br>
-                Ter um peso dentro do intervalo de peso ideal ajuda ainda a evitar o aparecimento de várias doenças
-                crônicas, como <b>diabetes</b> e <b>hipertensão</b>.
-            </p>
-            <div>
-                <img src="./src/images/corpo-imc.png" alt="" width="500px">
+        <div class="main">
+            <div class="text-img">
+                <h1 id="title">
+                    Calculadora de IMC
+                </h1>
+                <p id="paragraph">
+                    A classificação do <i>índice de massa corporal </i><b>(IMC)</b> pode ajudar a identificar problemas
+                    de
+                    obesidade ou desnutrição, em crianças, adolescentes, adultos e idosos. <br>
+                    Além de calcular o valor de <b>IMC</b>, esta calculadora também indica qual o intervalo de peso
+                    ideal que se
+                    deve ter para garantir uma melhor qualidade de vida.<br>
+                    Ter um peso dentro do intervalo de peso ideal ajuda ainda a evitar o aparecimento de várias doenças
+                    crônicas, como <b>diabetes</b> e <b>hipertensão</b>.
+                </p>
+                <div>
+                    <img src="./src/images/corpo-imc.png" alt="" width="500px">
+                </div>
+            </div>
+            <div class="imc-calculator" id="imc-calculator">
+                <h2>Calculadora</h2>
+                <h4>Coloque os seus dados na calculadora e calcule o seu IMC:</h4>
+                <div class="calculator" data-aos="fade-up" data-aos-delay="350">
+                    <form action="">
+                        <label for="weight">PESO:</label><br>
+                        <p><input type="number" placeholder="EX: 80KG" name="weight" id="weight" required> kg</p><br>
+                        <label for="height">ALTURA:</label><br>
+                        <p><input type="number" placeholder="EX: 175CM" name="height" id="height" required> cm</p>
+                        <button type="submit">CALCULAR</button>
+                    </form>
+                </div>
             </div>
         </div>
-        <div class="imc-calculator">
-            <h2>Calculadora</h2>
-            <h4>Coloque os seus dados na calculadora e calcule o seu IMC:</h4>
-            <div class="calculator" data-aos="fade-up" data-aos-delay="350">
-                <form action="" >
-                    <label for="">PESO:</label><br>
-                    <p><input type="number" placeholder="EX: 80KG" required> kg</p> <br>
-                    <label for="">ALTURA:</label><br>
-                    <p><input type="number" placeholder="EX: 1.75 M" required> cm</p>
-                    <button>CALCULAR</button>
-                </form>
+        <div class="resultImc">
+            <div id="triangle"></div>
+            <div class="result-div">
+                <h2>RESULTADO:</h2>
+                <p id="result">Seu IMC é de <b><span id="imc"></span> kg/m²</p></b>
+                <span id="line"></span>
+                <p> De acordo com a Organização Mundial da Saúde, seu IMC <span id="explainImc"></span> para <span id="imcGoal"> um valor de IMC normal, seu peso deve estar entre <b></span> <span id="minWeight" ></span> e <span id="maxWeight"></span>kg.</p></b>
             </div>
         </div>
+
     </main>
     <script src="./src/js/AOS.js"></script>
+    <script src="./src/js/index.js"></script>
 </body>
 
 </html>

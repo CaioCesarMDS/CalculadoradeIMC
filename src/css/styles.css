@@ -2,26 +2,31 @@ body {
     background-color: #edfaff;
 }
 
+.main {
+    display: flex;
+}
 
 .text-img {
     padding: 30px 50px 0 50px;
     max-width: 50%;
 }
 
-main {
-    display: flex;
+h1, h2 , h3, h4 {
+     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+p {
+       font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
 #title {
     padding-bottom: 40px;
     text-align: center;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
 #paragraph {
     line-height: 25px;
     letter-spacing: 0.6px;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
 img {
@@ -37,7 +42,6 @@ img {
 
 .imc-calculator h2 {
     padding-bottom: 20px;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
 .imc-calculator h4 {
@@ -88,4 +92,37 @@ button:hover {
     transition: background-color 0.8s;
     transform: scale(1.1);
     transition: transform 0.8s;
+}
+
+#triangle {
+    width: 0; 
+    height: 0; 
+    border-left: 25px solid transparent;
+    border-right: 25px solid transparent;
+    border-bottom: 25px solid  #ece9e9f1;
+    margin: -160px 80px 0 850px ;
+    position: absolute;
+}
+
+.result-div {
+    margin: -138px 80px 0 800px;
+    position: absolute;
+    padding: 32px 30px 300px 30px;
+    background-color: #ece9e9f1;
+    border-radius: 4px;
+}
+
+div.result-div p {
+    margin-top: 40px;
+}
+
+div p#result {
+    margin-top: 38px;
+}
+
+#line {
+    width: 320px;
+    border: 0.6px solid #b8b5b5f1;
+    position: absolute;
+    margin-top: 20px;
 }
