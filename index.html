@@ -52,18 +52,47 @@
                         <p><input type="number" placeholder="EX: 80KG" name="weight" id="weight" required> kg</p><br>
                         <label for="height">ALTURA:</label><br>
                         <p><input type="number" placeholder="EX: 175CM" name="height" id="height" required> cm</p>
-                        <button type="submit">CALCULAR</button>
+                        <button id="button" type="submit">CALCULAR</button>
                     </form>
                 </div>
             </div>
         </div>
         <div class="resultImc">
             <div id="triangle"></div>
-            <div class="result-div">
+            <div class="result-div" id="result-div">
                 <h2>RESULTADO:</h2>
                 <p id="result">Seu IMC é de <b><span id="imc"></span> kg/m²</p></b>
                 <span id="line"></span>
-                <p> De acordo com a Organização Mundial da Saúde, seu IMC <span id="explainImc"></span> para <span id="imcGoal"> um valor de IMC normal, seu peso deve estar entre <b></span> <span id="minWeight" ></span> e <span id="maxWeight"></span>kg.</p></b>
+                <p> De acordo com a Organização Mundial da Saúde, seu IMC <span id="explainImc"></span> para a sua
+                    altura. Para <span id="imcGoal"></span> um valor de IMC normal, seu peso deve estar entre <b><span
+                            class="minWeight"></span> e <span class="maxWeight"></span>kg.</p></b>
+                <table>
+                    <tr>
+                        <th></th>
+                        <th>IMC</th>
+                        <th>PESO</th>
+                    </tr>
+                    <tr>
+                        <td id="td" class="lineTableLowImc">Magreza</td>
+                        <td id="td" class="lineTableLowImc" > < 18.5 </td>
+                        <td id="td" class="lineTableLowImc"> < <span class="minWeight"></span> Kg  </td>
+                    </tr>
+                    <tr>
+                        <td id="td" class="lineTableNormalImc">Normal</td>
+                        <td id="td" class="lineTableNormalImc">18.5 a 24.9</td>
+                        <td id="td" class="lineTableNormalImc"> <span class="minWeight"></span> a <span class="maxWeight"></span> Kg </td>
+                    </tr>
+                    <tr>
+                        <td id="td" class="lineTableOverImc">Sobrepeso</td>
+                        <td id="td" class="lineTableOverImc">24.9 a 30</td>
+                        <td id="td" class="lineTableOverImc"> <span class="maxWeight"></span> a <span class="overWeight"></span> Kg </td>
+                    </tr>
+                    <tr>
+                        <td id="td" class="lineTableHighImc">Obesidade</td>
+                        <td id="td" class="lineTableHighImc"> > 30</td>
+                        <td id="td" class="lineTableHighImc"> > <span class="overWeight"> Kg </span> </td>
+                    </tr>
+                </table>
             </div>
         </div>
 

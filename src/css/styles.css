@@ -1,5 +1,38 @@
+:root {
+    --primary-color: #edfaff;
+    --secondary-color: #ffffff ;
+    --tertiary-color: #9ce4ff;
+    --quartenary-color: #c4efff;
+    --quinary-color: #36b1df;
+    --senary-color: #ece9e9f1;
+    --septenary-color: #b8b5b5f1;
+    --octanary-color: #023344;
+    --nonary-color: #a0d5e9;
+    --denary-color: #dddddd;
+    --undenary-color: rgb(125, 243, 125);
+}
+
+body::-webkit-scrollbar {
+    width: 12px;
+    /* width of the entire scrollbar */
+}
+
+body::-webkit-scrollbar-track {
+    background: var(--tertiary-color);
+    /* color of the tracking area */
+}
+
+body::-webkit-scrollbar-thumb {
+    background-color: var(--quinary-color);
+    /* color of the scroll thumb */
+    border-radius: 20px;
+    /* roundness of the scroll thumb */
+    border: 1px solid var(--septenary-colorqu);
+    /* creates padding around scroll thumb */
+}
+
 body {
-    background-color: #edfaff;
+    background-color: var(--primary-color);
 }
 
 .main {
@@ -12,11 +45,11 @@ body {
 }
 
 h1, h2 , h3, h4 {
-     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
 p {
-       font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
 #title {
@@ -51,9 +84,9 @@ img {
 
 .calculator {
     padding: 24px;
-    background-color: #ffffff;
-    border: 1px solid #9ce4ff;
-    box-shadow: 8px 8px 0 0 #c4efff;
+    background-color: var(--secondary-color);
+    border: 1px solid var(--tertiary-color);
+    box-shadow: 8px 8px 0 0 var(--quartenary-color);
     border-radius: 4px;
 }
 
@@ -65,7 +98,7 @@ input {
 }
 
 input:focus {
-    border: 3px solid #9ce4ff;
+    border: 3px solid var(--quartenary-color);
     
     outline: none;
 }
@@ -78,7 +111,7 @@ button {
     margin: 60px;
     width: 250px;
     height: 50px;
-    background-color: #36b1df;
+    background-color: var(--quinary-color);
     border-radius: 10px;
     cursor: pointer;
     border: none;
@@ -88,7 +121,7 @@ button {
 }
 
 button:hover {
-    background-color: #023344;
+    background-color: var(--octanary-color);
     transition: background-color 0.8s;
     transform: scale(1.1);
     transition: transform 0.8s;
@@ -99,16 +132,16 @@ button:hover {
     height: 0; 
     border-left: 25px solid transparent;
     border-right: 25px solid transparent;
-    border-bottom: 25px solid  #ece9e9f1;
+    border-bottom: 25px solid  var(--senary-color);
     margin: -160px 80px 0 850px ;
     position: absolute;
 }
 
 .result-div {
-    margin: -138px 80px 0 800px;
+    margin: -138px 80px 60px 800px;
     position: absolute;
-    padding: 32px 30px 300px 30px;
-    background-color: #ece9e9f1;
+    padding: 32px 30px 140px 30px;
+    background-color: var(--senary-color);
     border-radius: 4px;
 }
 
@@ -122,7 +155,37 @@ div p#result {
 
 #line {
     width: 320px;
-    border: 0.6px solid #b8b5b5f1;
+    border: 0.6px solid var(--septenary-color);
     position: absolute;
     margin-top: 20px;
 }
+
+table {
+    margin-top: 44px;
+    width: 100%;
+    border-collapse: collapse ;
+    border-spacing: 0;
+    border-radius: 10px;
+    background-color: var(--secondary-color);
+}
+
+table th {
+    padding: 12px;
+    text-align: center;
+    background-color: var(--nonary-color);
+}
+
+table td {
+    border: 1px solid var(--denary-color);
+    padding: 12px;
+    text-align: left;
+}
+
+table .td {
+    text-align: center;
+}
+
+.greenMark {
+    background-color: var(--undenary-color);
+}
+
