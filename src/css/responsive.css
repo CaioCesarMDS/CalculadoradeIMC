@@ -1,6 +1,6 @@
 @media screen and (max-width: 1260px) {
     .result-div {
-        margin: -138px 80px 60px 400px;
+        margin: -198px 80px 60px 400px;
     }
 
     #line {
@@ -11,7 +11,7 @@
 
 @media screen and (max-width: 1030px) {
     #triangle {
-        margin: -160px 80px 0 670px;
+        margin: -220px 80px 0 670px;
     }
 
     button {
@@ -24,6 +24,15 @@
         margin: 50px 8px;
         width: 240px;
         height: 45px;
+    }
+}
+
+@media screen and (max-width: 880px) {
+    #triangle {
+        margin: -260px 80px 0 670px;
+    }
+    .result-div {
+        margin: -240px 80px 60px 400px;
     }
 }
 
