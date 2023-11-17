@@ -82,7 +82,7 @@
     }
 
     .imc-calculator h4 {
-        width: 100%w;
+        width: 100%;
         white-space: nowrap;
     }
 
@@ -102,7 +102,7 @@
 
 @media screen and (min-width: 300px) and (max-width: 520px) {
     #paragraph {
-        width: 360px;
+        width: 350px;
     }
 
     img {
@@ -115,6 +115,10 @@
 
     .calculator {
         width: 340px;
+    }
+
+    button {
+        margin: 50px 30px;
     }
 
     .result-div {
