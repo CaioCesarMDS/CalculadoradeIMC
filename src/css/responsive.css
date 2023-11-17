@@ -1,0 +1,124 @@
+@media screen and (max-width: 1260px) {
+    .result-div {
+        margin: -138px 80px 60px 400px;
+    }
+
+    #line {
+        width: 80%;
+    }
+
+}
+
+@media screen and (max-width: 1030px) {
+    #triangle {
+        margin: -160px 80px 0 670px;
+    }
+
+    button {
+        margin: 50px 40px;
+    }
+}
+
+@media screen and (max-width: 920px) {
+    button {
+        margin: 50px 8px;
+        width: 240px;
+        height: 45px;
+    }
+}
+
+@media screen and (max-width: 820px) {
+    .main {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .text-img {
+        padding: 35px 0 35px 20px;
+    }
+
+    #paragraph {
+        width: 600px;
+    }
+
+    img {
+        margin: 50px 0 0 120px;
+    }
+
+    .calculator {
+        width: 450px;
+    }
+
+    #triangle {
+        margin: -100px 80px 0 250px;
+    }
+
+    .result-div {
+        margin: -80px 20px 40px 20px;
+        width: 450px;
+    }
+
+    button {
+        margin: 50px 70px;
+    }
+}
+
+@media screen and (max-width: 670px) {
+    #paragraph {
+        width: 500px;
+    }
+
+    #title {
+        width: 100%;
+        white-space: nowrap;
+    }
+
+    .imc-calculator {
+        padding: 20px 0 0 35px;
+    }
+
+    .imc-calculator h2 {
+        width: 100%;
+    }
+
+    .imc-calculator h4 {
+        width: 100%w;
+        white-space: nowrap;
+    }
+
+    #triangle {
+        margin: -100px 80px 0 250px;
+    }
+
+    .result-div {
+        margin: -80px 20px 40px 20px;
+        width: 450px;
+    }
+
+    button {
+        margin: 50px 60px;
+    }
+}
+
+@media screen and (min-width: 300px) and (max-width: 520px) {
+    #paragraph {
+        width: 360px;
+    }
+
+    img {
+        margin: 50px 0 0 100px;
+    }
+
+    .imc-calculator h4 {
+        white-space: wrap;
+    }
+
+    .calculator {
+        width: 340px;
+    }
+
+    .result-div {
+        margin: -80px 20px 40px 30px;
+        width: 340px;
+    }
+}
